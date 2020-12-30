@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <excludeFromCompile>
-      <directory url="file://$USER_HOME$/AppDirect/appdirect-parent/appdirect/src/main/groovy" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../AppDirect/appdirect-parent/appdirect/src/main/groovy" includeSubdirectories="true" />
     </excludeFromCompile>
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
@@ -14,5 +14,20 @@
       <entry name="!?*.kt" />
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="leetcodeProblems" />
+        <module name="leetcode" />
+        <module name="Leetcode" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="leetcode" target="1.8" />
+      <module name="Leetcode" target="1.8" />
+      <module name="leetcodeProblems" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
